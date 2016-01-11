@@ -31,7 +31,7 @@ with a couple of additions:
     * **:jvm-default** To show time using the current locale timezone.
  * **:locale** This is the locale to be used for timestamps based
      [Local](http://docs.oracle.com/javase/8/docs/api/java/util/Locale.html). There special keyword value `:jvm-default` can be used as shortcut to refer to the default locale (`:jvm-default` is the default):
-* A new key **:not-ansi-terminal** controls colorization best on the `TERM` environment variable
+* A new key **:not-ansi-terminal** controls colorization based on the `TERM` environment variable
   * if the value is *nil* or *false* colorization is always on (the default)
   * if the value is a string (e.g. `"dumb"`) then colorization will be turned
     *off* when `TERM=dumb`.
