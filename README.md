@@ -25,11 +25,11 @@ with a couple of additions:
      For example, to show milliseconds set the pattern
      to `"yy-MMM-dd HH:mm:ss.SSS"`. If set to *nil* or the empty string then
      a timestamp will *not* be printed. Defaults to *nil*.
- * **:timezone** This is the timezone to be used for timestamps based
+ * **:timezone** This is the timezone to be used for timestamps based on
      [TimeZone](http://docs.oracle.com/javase/8/docs/api/java/util/TimeZone.html). There are keyword values which can be used as shortcuts (`:jvm-default` is the default):
     * **:utc** To show time in UTC
     * **:jvm-default** To show time using the current locale timezone.
- * **:locale** This is the locale to be used for timestamps based
+ * **:locale** This is the locale to be used for timestamps based on
      [Local](http://docs.oracle.com/javase/8/docs/api/java/util/Locale.html). There special keyword value `:jvm-default` can be used as shortcut to refer to the default locale (`:jvm-default` is the default):
 * A new key **:not-ansi-terminal** controls colorization based on the `TERM` environment variable
   * if the value is *nil* or *false* colorization is always on (the default)
