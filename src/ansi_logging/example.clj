@@ -52,7 +52,8 @@
 
 (defn ansi-output-fn
   "Logging output function"
-  ([data] (output-fn nil data))
+  ([data]
+   (ansi-output-fn nil data))
   ([{:keys [no-stacktrace?] :as opts} data]
    (let [{:keys [config level ?err_ vargs_ msg_ ?ns-str hostname_ timestamp_]} data
          {:keys [timestamp-opts hide-levels colors]} config
